@@ -1,4 +1,4 @@
-package com.seanarnoldt.photos;
+package com.seanarnoldt.photos.web;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.seanarnoldt.photos.model.Photo;
+import com.seanarnoldt.photos.service.PhotoService;
 
 import jakarta.validation.Valid;
 

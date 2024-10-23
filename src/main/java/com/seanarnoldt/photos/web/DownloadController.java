@@ -1,4 +1,4 @@
-package com.seanarnoldt.photos;
+package com.seanarnoldt.photos.web;
 
 import org.springframework.http.ContentDisposition;
 import org.springframework.http.HttpHeaders;
@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
+
+import com.seanarnoldt.photos.model.Photo;
+import com.seanarnoldt.photos.service.PhotoService;
 
 @RestController
 public class DownloadController {

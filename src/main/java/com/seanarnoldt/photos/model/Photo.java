@@ -1,4 +1,4 @@
-package com.seanarnoldt.photos;
+package com.seanarnoldt.photos.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -35,7 +35,7 @@ public class Photo {
     public void setContentType(String contentType) {
         this.contentType = contentType;
     }
-    
+
     public void setData(byte[] data) {
         this.data = data;
     }

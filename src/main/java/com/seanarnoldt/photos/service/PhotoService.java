@@ -1,4 +1,4 @@
-package com.seanarnoldt.photos;
+package com.seanarnoldt.photos.service;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -7,6 +7,8 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+
+import com.seanarnoldt.photos.model.Photo;
 
 import jakarta.websocket.server.ServerEndpoint;
 

@@ -1,8 +1,25 @@
 package com.seanarnoldt.photos;
 
+import jakarta.validation.constraints.NotEmpty;
+
 public class Photo {
+    
+    @NotEmpty
      private String id; 
+
+     @NotEmpty
      private String fileName;
+
+
+
+    public Photo(){
+
+    }
+    
+    public Photo(String id, String fileName){
+        this.id = id;
+        this.fileName = fileName;
+    }
 
      public String getId() {
         return id;

@@ -1,13 +1,17 @@
 package com.seanarnoldt.photos.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.validation.constraints.NotEmpty;
 
+@Table("PHOTOS")
 public class Photo {
 
-    @NotEmpty
-     private String id; 
+    @Id
+    private Long id; 
 
     @NotEmpty
     private String fileName;
@@ -23,11 +27,6 @@ public class Photo {
 
     }
     
-    public Photo(String id, String fileName){
-        this.id = id;
-        this.fileName = fileName;
-    }
-
     public String getContentType() {
         return contentType;
     }
@@ -44,11 +43,11 @@ public class Photo {
         return data;
     }
 
-     public String getId() {
+     public Long getId() {
         return id;
      }
 
-     public void setId(String id){
+     public void setId(Long id){
         this.id = id;
      }
 
